@@ -1,0 +1,12 @@
+**/.dockerignore
+**/.venv
+**/.idea
+**/.pytest_cache
+**/.git
+**/.gitignore
+**/.vs
+**/.vscode
+**/docker-compose*
+**/Dockerfile*
+**/.env
+**/tests

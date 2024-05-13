@@ -1,0 +1,18 @@
+version: "2.27.0"
+services:
+  db:
+    image: postgres:16-alpine
+    expose:
+      - 5432
+    env_file:
+      - .env-docker
+
+  app:
+    build:
+      context: .
+    env_file:
+      - .env-docker
+    ports:
+      - "8008:8000"
+    depends_on:
+      - db
